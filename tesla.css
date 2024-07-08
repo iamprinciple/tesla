@@ -1,0 +1,405 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+*body{
+    width: 100%;
+    height: 100vh;
+}
+video{
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+    z-index: -1;
+    height: 760px;
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    height: 35px;
+    padding: 20px;
+    /* background-color: white; */
+}
+nav img{
+    width: 110px;
+    height: 80px;
+}
+.button-div{
+    display: flex;
+    flex-direction: row;
+    /* gap: 5px; */
+    padding: 20px;
+}
+button{
+    width: 120px;
+    height: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+    border: 1px transparent;
+    background-color: transparent;
+    position: relative;
+}
+.drop{
+    position: absolute;
+    display: none;
+    background-color: white;
+    justify-content: center;
+    border-radius: 8px;
+    margin: 30px;
+    top: 0;
+    left: -335%;
+}
+.energydrop{
+    position: absolute;
+    display: none;
+    background-color: white;
+    /* height: 500px; */
+    justify-content: center;
+    border-radius: 8px;
+    margin: 30px;
+    top: 0;
+    left: -445%;
+}
+.chargedrop{
+    position: absolute;
+    display: none;
+    background-color: white;
+    /* height: 500px; */
+    justify-content: center;
+    border-radius: 8px;
+    margin: 30px;
+    top: 0;
+    left: -545%;
+}
+.discoverdrop{
+    position: absolute;
+    display: none;
+    background-color: white;
+    /* height: 500px; */
+    justify-content: center;
+    text-align: center;
+    border-radius: 8px;
+    margin: 30px;
+    top: 0;
+    left: -645%;
+}
+.shopdrop{
+    position: absolute;
+    display: none;
+    background-color: white;
+    /* height: 500px; */
+    justify-content: center;
+    text-align: center;
+    border-radius: 8px;
+    margin: 30px;
+    top: 0;
+    left: -745%;
+}
+.car-div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 800px;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0px 20px 20px;
+    margin: 30px 30px;
+}
+.energy-div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 750px;
+    justify-content: left;
+    text-align: center;
+    padding: 20px 0px 20px 20px;
+    margin: 30px 30px;
+}
+.charge-div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 750px;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0px 20px 20px;
+    margin: 30px 30px;
+}
+.discover-div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 750px;
+    justify-content: center;
+    text-align: center;
+    padding: 30px ;
+    margin: 30px 30px;
+}
+.shopdiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 1000px;
+    justify-content: center;
+    text-align: center;
+    padding: 30px ;
+    margin: 30px 30px;
+}
+.drop img, .energydrop img, .chargedrop img, .shopdrop img{
+    width: 200px;
+    height: 150px;
+}
+button:hover .drop{
+    display: block;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1375px;
+    height: 480px;
+    gap: 30px;
+    justify-content: left;
+    text-align: left;
+    margin: 30px;
+    /* transition-delay: 2s; */
+    /* left: -50%; */
+    /* top: 90%; */
+}
+button:hover .energydrop{
+    display: block;
+    display: flex;
+    width: 1370px;
+    height: 480px;
+}
+button:hover .chargedrop{
+    display: block;
+    display: flex;
+    width: 1370px;
+    height: 380px;
+}
+button:hover .discoverdrop{
+    display: block;
+    display: flex;
+    width: 1370px;
+    height: 350px;
+}
+button:hover .shopdrop{
+    display: block;
+    display: flex;
+    width: 1370px;
+    height: 350px;
+}
+h3{
+    text-align: left;
+    font-weight: 200;
+    margin: 20px;
+}
+button:hover{
+    background-color: rgb(242,242,242);
+}
+nav:hover{
+    background-color: white;
+    /* transition-delay: 1s; */
+}
+
+a{
+    text-decoration: none;
+    padding: 6px;
+    color: black;
+}
+li{
+    /* text-decoration: none; */
+    list-style: none;
+    text-align: left;
+    margin: 20px ;
+    color: black;
+}
+.line{
+    background-color: black;
+    height: 300px;
+    width: 1px;
+    rotate: 180deg;
+    /* text-align: center; */
+    margin: 50px;
+}
+.decor a{
+    text-decoration: underline;
+    font-size: 14px;
+    font-weight: 300;
+}
+.decor a:hover{
+    text-decoration: underline 2px solid black;
+}
+.dot{
+    border-radius: 100%;
+    background-color: white;
+    height: 10px;
+    width: 10px;
+}
+.dot-div{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.find-div{
+    justify-content: left;
+    /* text-align: justify; */
+    padding: 65px;
+    margin-top: 200px;
+    width: 610px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.find-div h1{
+    font-size: 45px;
+    color: white;
+    font-weight: 700;
+    font-stretch: extra-condensed;
+    
+}
+.find-div P{
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+    font-stretch: extra-condensed;
+}
+.helpbtn button{
+    width: 200px;
+    height: 40px;
+    background-color: white;
+    text-align: center;
+}
+.sec2{
+    background: url(Homepage-Model-Y-Global-Desktop.jpeg);
+    /* width: 900px; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 670px;
+    padding: 15px;
+}
+.sec3{
+    background: url(model\ 3.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 670px;
+    padding: 15px;
+}
+.sec4{
+    background: url(2022-model-x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 670px;
+    padding: 15px;
+}
+.sec5{
+    background: url(model\ s.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 670px;
+    padding: 15px;
+}
+.sec6{
+    background: url(Homepage-Cybertruck-Desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 670px;
+    padding: 15px;
+}
+.sec7{
+    background: url(Homepage-SolarPanels-01-Desktop.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+    padding: 15px;
+}
+.sec7 h2{
+    color: white;
+}
+.sec8{
+    background: url(Homepage-SolarRoof-Desktop-Global.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    padding: 15px;
+}
+.sec9{
+    background: url(Homepage-Powerwall-01-Desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 630px;
+    padding: 15px;
+}
+.sec10{
+    background: url(Homepage-Accessories-Desktop-NA-APAC.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 630px;
+    padding: 15px;
+}
+h2{
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    color: black;
+    margin-top: 45px;
+}
+h3{
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    color: black;
+}
+h4{
+    font-size: 16px;
+    font-weight: 200;
+    text-align: center;
+}
+.helpbtn1 .b1, .b2{
+    width: 280px;
+    height: 40px;
+    text-align: center;
+}
+.b1{
+    background-color: white;
+    color: black;
+    font-weight: 500;
+}
+.b2{
+    background-color: rgb(57,64,72);
+    color: white;
+    font-weight: 500;
+}
+.helpbtn1{
+    margin-top: 390px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.helpbtn2{
+    margin-top: 560px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.helpbtn2 .b1, .b2{
+    width: 280px;
+    height: 40px;
+    text-align: center;
+}
+
+
+/* Media querry */
+@media (screen) {
+    
+}
